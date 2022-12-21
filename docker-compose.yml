@@ -9,6 +9,7 @@ services:
       - .:/myapp
       - bundle:/usr/local/bundle
     tty: true
+    stdin_open: true
   db:
     image: postgres
     volumes:
