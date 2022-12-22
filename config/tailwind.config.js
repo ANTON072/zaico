@@ -1,16 +1,21 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
   content: [
     './public/*.html',
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
-    './app/views/**/*.{erb,haml,html,slim}'
+    './app/views/**/*.{erb,haml,html,slim}',
+    './app/components/**/*.{erb,haml,html,slim}'
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        default: [
+          'ヒラギノ角ゴ Pro W3',
+          'Hiragino Kaku Gothic Pro',
+          'メイリオ',
+          'Meiryo',
+          'sans-serif'
+        ],
       },
     },
   },
