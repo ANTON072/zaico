@@ -1,0 +1,8 @@
+{
+  "name": "zaico",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ANTON072/zaico.git",
+  "author": "Katsushi OUGI <ougi@to-r.net>",
+  "license": "MIT"
+}
