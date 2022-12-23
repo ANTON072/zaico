@@ -7,20 +7,13 @@ services:
       - "3000:3000"
     volumes:
       - .:/myapp
-      - bundle:/usr/local/bundle
     tty: true
     stdin_open: true
   db:
     image: postgres
     volumes:
-      - pgsqldb:/var/lib/postgresql/data
+      - ./tmp/db:/var/lib/postgresql/data
     environment:
       POSTGRES_PASSWORD: password
     ports:
       - "3306:3306"
-
-volumes:
-  pgsqldb:
-    driver: local
-  bundle:
-    driver: local

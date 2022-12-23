@@ -10,8 +10,15 @@
   "files.associations": {
     "*.html.erb": "erb"
   },
+  "vscode-erb-beautify.useBundler": true,
+  "cSpell.words": [
+    "zaico"
+  ],
   "[erb]": {
-    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "vscode-erb-beautify.useBundler": true
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }

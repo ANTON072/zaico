@@ -17,7 +17,10 @@
 	// connected. This is typically a file mount in .devcontainer/docker-compose.yml
 	"workspaceFolder": "/myapp",
 
-	"extensions": ["misogi.ruby-rubocop"]
+	"extensions": [
+		"misogi.ruby-rubocop",
+		"github.vscode-pull-request-github"
+	]
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
