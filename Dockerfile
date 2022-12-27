@@ -17,17 +17,17 @@ RUN set -ex && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-WORKDIR /myapp
+WORKDIR /zaico
 
 # Ensure gems are installed on a persistent volume and available as bins
 VOLUME /bundle
 RUN bundle config set --global path '/bundle'
 ENV PATH="/bundle/ruby/3.1.3/bin:${PATH}"
 
-COPY Gemfile /myapp/Gemfile
-COPY Gemfile.lock /myapp/Gemfile.lock
-COPY package.json /myapp/package.json
-COPY yarn.lock /myapp/yarn.lock
+COPY Gemfile /zaico/Gemfile
+COPY Gemfile.lock /zaico/Gemfile.lock
+COPY package.json /zaico/package.json
+COPY yarn.lock /zaico/yarn.lock
 
 RUN yarn install --check-files
 
